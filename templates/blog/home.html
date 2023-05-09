@@ -1,0 +1,8 @@
+{% extends "blog/base.html" %}
+{% import 'blog/macros.html' as macros %}
+{% block title %}Home{% endblock %}
+{% block leftbody %}
+
+{{ macros.render_posts(posts) }}
+{{ macros.render_pagination(posts, 'home') }}
+{% endblock %}
